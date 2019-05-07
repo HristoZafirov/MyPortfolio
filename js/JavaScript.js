@@ -40,3 +40,4 @@ function toggleModalOff() {
 	let icon = document.getElementById('icon');
 	icon.setAttribute("onclick", "toggleModalOn()");
 }
+
