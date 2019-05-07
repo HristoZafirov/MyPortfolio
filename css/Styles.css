@@ -506,10 +506,13 @@ nav span a:hover {
 .portfolio .sq {
 	width: 200px;
 	height: 200px;
-	background: #555;
 	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
+	transition: background-color 0.3s;
+}
+.portfolio .sq:hover {
+	background-color: #aaa;
 }
 .portfolio .sq a {
 	cursor: pointer;
@@ -524,26 +527,7 @@ nav span a:hover {
 .portfolio .sq a h2 {
 	text-align: center;
 	color: #eee;
-	font-family: josefinL, sans-serif;
-	font-size: 30px;
-	transform: scale(0);
-	transition: all 0.25s;
-}
-.portfolio .sq:hover a h2 {
-	transform: scale(1);
-}
-.portfolio .sq:hover a img {
-	filter: brightness(0.5) blur(2px);
-	transform: scale(1.15);
-}
-.portfolio .sq a img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: all 0.25s;
-
+	font: 18px/100px josefinR;
 }
 .warning {
 	font-family: josefinB, sans-serif;
@@ -688,4 +672,38 @@ footer p {
 	text-align: center;
 	color: #fff;
 	font: 20px/60px josefinR;
+}
+
+
+/* ========= COLORS ============================ */
+
+.orange {
+	background-color: orange;
+}
+.yellowgreen {
+	background-color: yellowgreen;
+}
+.pink {
+	background-color: pink;
+}
+.grey {
+	background-color: grey;
+}
+.teal {
+	background-color: teal;
+}
+.green {
+	background-color: green;
+}
+.purple {
+	background-color: purple;
+}
+.coral {
+	background-color: coral;
+}
+.dodgerblue {
+	background-color: dodgerblue;
+}
+.red {
+	background-color: red;
 }
