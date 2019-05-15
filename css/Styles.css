@@ -496,7 +496,9 @@ nav span a:hover {
 	height: 2px;
 	background-color: #725316;
 }
-
+.layer-5 .col a {
+	text-decoration: none;
+}
 .layer-5 .portfolio {
 	width: 1200px;
 	margin: 60px auto 0;
