@@ -47,19 +47,6 @@ function parallax(selector, context) {
     var elements = context.querySelectorAll(selector);
     return Array.prototype.slice.call(elements);
 }
-// TO BE FIXED !!!
-function fadeIn(par, par2){
-    var scrolledHeight= window.pageYOffset;
-    var param = document.getElementById(par);
-    var limit = document.getElementById(par2);
-    var p1 = document.getElementById('demo2');
-    var calc = document.getElementById('demo3');
-    p2.innerHTML = limit.offsetTop;
-    calc.innerHTML = calcHeight(scrolledHeight);
-        if(scrolledHeight >= (screen.height * calcHeight(scrolledHeight) - (Math.abs(limit.offsetTop) * (calcHeight(scrolledHeight)+1)))) {
-            param.style.display = "block";
-        }
-}
 
 window.addEventListener("scroll", function() {
     var scrolledHeight= window.pageYOffset;
@@ -75,9 +62,25 @@ window.addEventListener("scroll", function() {
             par.style.backgroundPositionY= "0";
         }
     });
-    if (calcHeight(scrolledHeight) == 1 ) {
-        fadeIn('fadeIn1', 'boxfade1');
-    } else if (calcHeight(scrolledHeight) == 2) {
-        fadeIn('fadeIn2', 'boxfade2');
-    }
 });
+
+
+function roadmap(e){
+	switch(e){
+		case 1: 
+			document.getElementById('roadmapContent').innerHTML = "<i>Planning</i><br />This is the step where we plan everything before we start designing. The client is usually involved in 80% of the planning stage.";
+			break;
+		case 2:
+			document.getElementById('roadmapContent').innerHTML = "<i>Designing</i><br />During this step a design is made considering the client's requirements. The design must satisfy all needs.";
+			break;
+		case 3:
+			document.getElementById('roadmapContent').innerHTML = "<i>Coding</i><br />The client is NOT involved in this stage, this is when the programmer takes place and follows the steps made during the previous stages.";
+			break;
+		case 4:
+			document.getElementById('roadmapContent').innerHTML = "<i>Testing</i><br />This is the final step of the development process where the complete product is being tested and checked if everything works the way it is supposed to.";
+			break;
+		default:
+			document.getElementById('roadmapContent').innerHTML = "<i>Planning</i><br />This is the step where we plan everything before we start designing. The client is usually involved in 80% of the planning stage.";
+			break;
+	}
+}
