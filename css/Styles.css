@@ -1009,11 +1009,37 @@ footer p {
 		width: 70px;
 	}
 	.layer-4 {
-		height: 400px;
+		height: 860px;
 		padding: 50px 0;
 	}
 	.layer-4 h1 {
 		font-size: 22px;
+	}
+	.layer-4 .roadmap {
+		padding: 100px 0 0;
+	}
+	.layer-4 .roadmap .col.left,
+	.layer-4 .roadmap .col.right {
+		width: 100%;
+	}
+	.block-1, .block-2, .block-3, .block-4 {
+		width: 100%;
+	}
+	.layer-4 .col .bubble {
+		width: 350px;
+		height: 350px;
+		transform: translateY(50px);
+		padding: 80px 50px;
+	}
+	.layer-4 .col .bubble::before {
+		width: 400px;
+		height: 400px;
+	}
+	.layer-4 .col .bubble p {
+		font-size: 18px;
+	}
+	.layer-4 .col .bubble p i {
+		font-size: 21px;
 	}
 	.layer-5 {
 		padding-top: 40px;
