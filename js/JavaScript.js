@@ -68,19 +68,54 @@ window.addEventListener("scroll", function() {
 function roadmap(e){
 	switch(e){
 		case 1: 
-			document.getElementById('roadmapContent').innerHTML = "<i>Planning</i><br />This is the step where we plan everything before we start designing. The client is usually involved in 80% of the planning stage.";
+			document.getElementById('bubb1').style.display = " block";
+			document.getElementById('bubb2').style.display = " none";
+			document.getElementById('bubb3').style.display = " none";
+			document.getElementById('bubb4').style.display = " none";
+			document.getElementById('dot1').style.backgroundColor = "#333";
+			document.getElementById('dot2').style.backgroundColor = "transparent";
+			document.getElementById('dot3').style.backgroundColor = "transparent";
+			document.getElementById('dot4').style.backgroundColor = "transparent";
 			break;
-		case 2:
-			document.getElementById('roadmapContent').innerHTML = "<i>Designing</i><br />During this step a design is made considering the client's requirements. The design must satisfy all needs.";
+		case 2: 
+			document.getElementById('bubb1').style.display = " none";
+			document.getElementById('bubb2').style.display = " block";
+			document.getElementById('bubb3').style.display = " none";
+			document.getElementById('bubb4').style.display = " none";
+			document.getElementById('dot1').style.backgroundColor = "transparent";
+			document.getElementById('dot2').style.backgroundColor = "#333";
+			document.getElementById('dot3').style.backgroundColor = "transparent";
+			document.getElementById('dot4').style.backgroundColor = "transparent";
 			break;
-		case 3:
-			document.getElementById('roadmapContent').innerHTML = "<i>Coding</i><br />The client is NOT involved in this stage, this is when the programmer takes place and follows the steps made during the previous stages.";
+		case 3: 
+			document.getElementById('bubb1').style.display = " none";
+			document.getElementById('bubb2').style.display = " none";
+			document.getElementById('bubb3').style.display = " block";
+			document.getElementById('bubb4').style.display = " none";
+			document.getElementById('dot1').style.backgroundColor = "transparent";
+			document.getElementById('dot2').style.backgroundColor = "transparent";
+			document.getElementById('dot3').style.backgroundColor = "#333";
+			document.getElementById('dot4').style.backgroundColor = "transparent";
 			break;
-		case 4:
-			document.getElementById('roadmapContent').innerHTML = "<i>Testing</i><br />This is the final step of the development process where the complete product is being tested and checked if everything works the way it is supposed to.";
+		case 4: 
+			document.getElementById('bubb1').style.display = " none";
+			document.getElementById('bubb2').style.display = " none";
+			document.getElementById('bubb3').style.display = " none";
+			document.getElementById('bubb4').style.display = " block";
+			document.getElementById('dot1').style.backgroundColor = "transparent";
+			document.getElementById('dot2').style.backgroundColor = "transparent";
+			document.getElementById('dot3').style.backgroundColor = "transparent";
+			document.getElementById('dot4').style.backgroundColor = "#333";
 			break;
-		default:
-			document.getElementById('roadmapContent').innerHTML = "<i>Planning</i><br />This is the step where we plan everything before we start designing. The client is usually involved in 80% of the planning stage.";
+		default: 
+			document.getElementById('bubb1').style.display = " block";
+			document.getElementById('bubb2').style.display = " none";
+			document.getElementById('bubb3').style.display = " none";
+			document.getElementById('bubb4').style.display = " none";
+			document.getElementById('dot1').style.backgroundColor = "#333";
+			document.getElementById('dot2').style.backgroundColor = "transparent";
+			document.getElementById('dot3').style.backgroundColor = "transparent";
+			document.getElementById('dot4').style.backgroundColor = "transparent";
 			break;
 	}
 }
