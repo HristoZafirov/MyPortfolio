@@ -15,6 +15,7 @@ html, body, * {
 }
 body {
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(113,113,113,1) 95%);
+	overflow-x: hidden;
 }
 @font-face {
 	font-family: 'josefinR';
@@ -978,6 +979,42 @@ footer p {
 
 /* =========== MEDIA QUERIES =================== */
 @media only screen and (min-width: 1500px) {
+	.layer-1 {
+		width: 1336px;
+		margin: auto;
+	}
+	.layer-2 {
+		width: 1336px;
+		margin: auto;
+	}
+	.avatar-divider {
+		width: 1336px;
+		margin: auto;
+	}
+	.layer-3 {
+		width: 1336px;
+		margin: auto;
+		padding: 100px 0;
+	}
+	.layer-4 {
+		width: 1336px;
+		margin: auto;
+	}
+	.layer-5 {
+		width: 1336px;
+		margin: auto;
+	}
+	.layer-6 {
+		width: 1336px;
+		height: 750px;
+		margin: auto;
+	}
+	footer {
+		width: 1336px;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 1366px) {
 	.layer-1 {
 		width: 1336px;
 		margin: auto;
