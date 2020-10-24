@@ -1013,6 +1013,204 @@ footer p {
 		margin: auto;
 	}
 }
+@media only screen and (max-width: 1024px) {
+	.layer-1 {
+		height: 600px;
+		padding-top: 165px;
+	}
+	.layer-1 .heading {
+		font-size: 95px;
+	}
+	div.avatar-divider::before {
+		width: 250px;
+		height: 250px;
+		top: -150px;
+		transform: translateX(-125px);
+	}
+	.batteries .col.right {
+		transform: translateX(75px);
+	}
+	.batteries .col.left {
+		transform: translateX(-75px);
+	}
+	.layer-4 .roadmap .dot-wrapper {
+		transform: translate3d(150px, -75px,0);
+	}
+	.layer-4 .col p {
+		width: 80%;
+		padding: 99px 80px;
+	}
+	.layer-5 .portfolio {
+		width: 100%;
+	}
+	.layer-6 .container {
+		padding: 140px 120px 0px;
+	}
+	.layer-6 form {
+		padding: 5px 40px 15px;
+	}
+	.layer-6 form input[type="text"] {
+		height: 35px;
+	}
+	.layer-6 form textarea {
+		height: 45px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.layer-1 {
+		height: 500px;
+	}
+	.layer-1 .heading {
+		font-size: 80px;
+	}
+	.layer-1 .underheading {
+		font-size: 25px;
+	}
+	.layer-1 .icon-container .coli .col a img {
+		width: 40px;
+		height: 40px;
+	}
+	div.avatar-divider::before {
+		width: 200px;
+		height: 200px;
+		top: -125px;
+		transform: translateX(-100px);
+	}
+	.layer-2 {
+		padding-top: 150px;
+		height: 630px;
+	}
+	.layer-2 .l2-heading {
+		font-size: 40px;
+	}
+	.layer-2 .l2-underheading {
+		font-size: 30px;
+	}
+	.layer-2 .l2-container {
+		margin-top: 60px;
+	}
+	.layer-2 .col .img {
+		width: 60px;
+		height: 60px;
+	}
+	.layer-2 .col .img::before {
+		width: 60px;
+		height: 60px;
+	}
+	.layer-2 .heading {
+		font-size: 35px;
+	}
+	.layer-2 .text {
+		text-align: center;
+		font-size: 22px;
+	}
+	.layer-3 {
+		height: 520px;
+		padding: 65px 50px 0px 50px;
+	}
+	.layer-3 .l3-container .batteries {
+		width: 65%;
+	}
+	.layer-3 .l3-container .batteries .battery {
+		width: 260px;
+		height: 50px;
+		padding: 10px 20px;
+	}
+	.layer-3 #btr1 {
+		width: 200px;
+	}
+	.layer-3 #btr2 {
+		width: 180px;
+	}
+	.layer-3 #btr3 {
+		width: 120px;
+	}
+	.layer-3 #btr4 {
+		width: 100px;
+	}
+	.layer-4 .roadmap .dot-wrapper {
+		transform: translate3d(-20px, -110px, 0);
+	}
+	.layer-4 .roadmap .col.right {
+		transform: translate3d(30px, -100px, 0);
+	}
+	.layer-4 .col .bubble {
+		width: 370px;
+		height: 370px;
+	}
+	.layer-4 .col .bubble2 {
+		width: 440px;
+		height: 440px;
+		top: -35px;
+		left: -35px;
+	}
+	.layer-4 .col p {
+		width: 90%;
+		padding: 99px 80px;
+		font-size: 18px;
+	}
+	.layer-5 {
+		padding-top: 60px;
+	}
+	.layer-5 .portfolio .col {
+		height: 275px;
+	}
+	.layer-5 .warning {
+		font-size: 16px;
+	}
+	.layer-5 .portfolio .col .col-bg p {
+		font-size: 13px;
+	}
+	.layer-5 .divider {
+		height: 40px;
+	}
+	.layer-6 .container {
+		padding: 125px 110px 0px;
+	}
+	.layer-6 .col h2 {
+		font-size: 30px;
+	}
+	.layer-6 .col p {
+		font-size: 21px;
+	}
+	.p1img::before {
+		left: -40px;
+		top: -10px;
+		width: 22px;
+		height: 40px;
+	}
+	.p2img::before {
+		left: -43px;
+		top: -5px;
+		width: 30px;
+		height: 30px;
+	}
+	.p3img::before {
+		left: -45px;
+		top: -2px;
+	}
+	.layer-6 form {
+		padding: 5px 25px 15px;
+	}
+	.layer-6 form p.formWarning {
+		font-size: 14px;
+	}
+	.layer-6 form input[type="text"] {
+		border-bottom: 1px solid #333;
+		height: 30px;
+		font-size: 14px;
+	}
+	.layer-6 form textarea {
+		border-bottom: 1px solid #333;
+		height: 40px;
+		font-size: 14px;
+	}
+	.layer-6 form input[type="submit"] {
+		font: 16px/30px josefinL;
+		width: 130px;
+		height: 30px;
+	}
+}
 @media only screen and (max-width: 600px) {
 	#modal .modal-icons .col {
 		transform: translate3d(0,0,0);
