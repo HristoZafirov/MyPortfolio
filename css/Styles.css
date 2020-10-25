@@ -474,6 +474,7 @@ nav span a:hover {
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(113,113,113,1) 95%);
 	padding: 60px 0;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 .layer-4 h1 {
 	font-size: 32px;
@@ -622,23 +623,23 @@ nav span a:hover {
 	from {
 		opacity: 0;
 		filter: alpha(opacity=0);
-		transform: translate3d(-25px,0,0) scale(0.2);
+		transform: translate3d(-50px,0,0) scale(0.2);
 	} to {
 		opacity: 1;
 		filter: alpha(opacity=100);
-		transform: translate3d(-25px,0,0) scale(1);
+		transform: translate3d(-50px,0,0) scale(1);
 	}
 }
 .layer-4 .col p {
 	font-family: josefinR, sans-serif;
 	font-size: 22px;
-	padding: 100px 70px;
+	padding: 100px 110px;
 	box-sizing: border-box;
 	position: relative;
 	width: 60%;
 	height: 90%;
 	animation: playSwitchhh 0.5s ease-out 0s 1 normal;
-	transform: translate3d(-25px,0,0);
+	transform: translate3d(-50px,0,0);
 }
 .layer-4 .col p i {
 	font-size: 26px;
@@ -980,80 +981,99 @@ footer p {
 /* =========== MEDIA QUERIES =================== */
 @media only screen and (min-width: 1500px) {
 	.layer-1 {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
 	.layer-2 {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
 	.avatar-divider {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
 	.layer-3 {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 		padding: 100px 0;
 	}
 	.layer-4 {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
+	.layer-4 .col p {
+		padding: 100px 150px;
+		transform: translateX(-75px);
+	}
+	@keyframes playSwitchhh {
+		from {
+			opacity: 0;
+			filter: alpha(opacity=0);
+			transform: translate3d(-75px,0,0) scale(0.2);
+		} to {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			transform: translate3d(-75px,0,0) scale(1);
+		}
+	}
 	.layer-5 {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
 	.layer-6 {
-		width: 1336px;
+		width: 1600px;
 		height: 750px;
 		margin: auto;
 	}
 	footer {
-		width: 1336px;
+		width: 1600px;
 		margin: auto;
 	}
 }
 @media only screen and (max-width: 1366px) {
 	.layer-1 {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 	.layer-2 {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 	.avatar-divider {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 	.layer-3 {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 		padding: 100px 0;
 	}
 	.layer-4 {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 	.layer-5 {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 	.layer-6 {
-		width: 1336px;
+		width: 1366px;
 		height: 750px;
 		margin: auto;
 	}
 	footer {
-		width: 1336px;
+		width: 1366px;
 		margin: auto;
 	}
 }
 @media only screen and (max-width: 1024px) {
 	.layer-1 {
+		width: 100%;
 		height: 600px;
 		padding-top: 165px;
+	}
+	.layer-2 {
+		width: 100%;
 	}
 	.layer-1 .heading {
 		font-size: 95px;
@@ -1064,11 +1084,20 @@ footer p {
 		top: -150px;
 		transform: translateX(-125px);
 	}
+	.layer-3 {
+		width: 100%;
+	}
+	.avatar-divider {
+		width: 100%;
+	}
 	.batteries .col.right {
 		transform: translateX(75px);
 	}
 	.batteries .col.left {
 		transform: translateX(-75px);
+	}
+	.layer-4 {
+		width: 100%;
 	}
 	.layer-4 .roadmap .dot-wrapper {
 		transform: translate3d(150px, -75px,0);
@@ -1076,9 +1105,39 @@ footer p {
 	.layer-4 .col p {
 		width: 80%;
 		padding: 99px 80px;
+		transform: translateX(-25px);
+
+	}
+	@keyframes playSwitchhh {
+		from {
+			opacity: 0;
+			filter: alpha(opacity=0);
+			transform: scale(0.2);
+			transform: translateX(-25px);
+		} to {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			transform: scale(1);
+			transform: translateX(-25px);
+		}
+	}
+	.layer-4 #roadmapContent {
+		margin: 0;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+	.layer-5 {
+		width: 100%;
 	}
 	.layer-5 .portfolio {
 		width: 100%;
+	}
+	.layer-5 .divider {
+		height: 70px;
+	}
+	.layer-6 {
+		width: 100%;
+		height: 600px;
 	}
 	.layer-6 .container {
 		padding: 140px 120px 0px;
@@ -1092,8 +1151,14 @@ footer p {
 	.layer-6 form textarea {
 		height: 45px;
 	}
+	footer {
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 768px) {
+	.modal-icons .col {
+		width: 33%;
+	}
 	.layer-1 {
 		height: 500px;
 	}
@@ -1185,6 +1250,19 @@ footer p {
 		width: 90%;
 		padding: 99px 80px;
 		font-size: 18px;
+		transform: translateX(0);
+
+	}
+	@keyframes playSwitchhh {
+		from {
+			opacity: 0;
+			filter: alpha(opacity=0);
+			transform: scale(0.2);
+		} to {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			transform: scale(1);
+		}
 	}
 	.layer-5 {
 		padding-top: 60px;
@@ -1200,6 +1278,9 @@ footer p {
 	}
 	.layer-5 .divider {
 		height: 40px;
+	}
+	.layer-6 {
+		height: 520px;
 	}
 	.layer-6 .container {
 		padding: 125px 110px 0px;
@@ -1272,10 +1353,10 @@ footer p {
 		padding-top: 150px;
 	}
 	.layer-1 .heading {
-		font-size: 35px;
+		font-size: 50px;
 	}
 	.layer-1 .underheading {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.layer-1 .icon-container {
 		display: none;
@@ -1288,7 +1369,7 @@ footer p {
 	}
 	.layer-2 {
 		padding-top: 100px;
-		height: 1200px;
+		height: 1120px;
 	}
 	.layer-2 .l2-container {
 		margin-top: 50px;
@@ -1328,8 +1409,26 @@ footer p {
 	.layer-3 h1 {
 		font-size: 35px;
 	}
-	.batteries .col {
+	.batteries .col.right {
 		width: 100%;
+		transform: translateX(0);
+	}
+	.batteries .col.left {
+		width: 100%;
+		transform: translateX(0);
+	}
+
+	.layer-3 #btr1 {
+		width: 150px;
+	}
+	.layer-3 #btr2 {
+		width: 140px;
+	}
+	.layer-3 #btr3 {
+		width: 120px;
+	}
+	.layer-3 #btr4 {
+		width: 100px;
 	}
 	.layer-3 .l3-container .batteries .battery {
 		width: 200px;
@@ -1391,16 +1490,17 @@ footer p {
 	}
 	.layer-6 {
 		width: 100%;
-		height: 850px;
+		height: 700px;
 	}
 	.layer-6 .container .col.right {
 		width: 100%;
-		float: left;
+		float: none;
+		transform: translate3d(0,115px,0);
 	}
 	.layer-6 .container .col.left {
 		width: 100%;
-		float: right;
-		transform: translate3d(0,-70px,0);
+		float: none;
+		transform: translate3d(0,50px,0);
 	}
 	.layer-6 .container {
 		padding: 30px 20px;
@@ -1418,3 +1518,14 @@ footer p {
 	}
 }
 
+@media only screen and (max-width: 380px) {
+	.layer-1 .heading {
+		font-size: 40px;
+	}
+	.layer-2 .l2-container {
+		margin-top: 30px;
+	}
+	.layer-2 .l2-container .col {
+		padding-bottom: 10px;
+	}
+}
