@@ -743,6 +743,9 @@ nav span a:hover {
 	transform: scale(0.5);
 	transition: 0.3s all;
 }
+.layer-5 .portfolio .col .col-bg p#lowerr {
+	transform: translateY(30px); scale(0.5);
+}
 .layer-5 .portfolio .col:hover img {
 	filter: brightness(1);
 }
@@ -755,7 +758,7 @@ nav span a:hover {
 }
 .layer-5 .portfolio .col:hover .col-bg p {
 	opacity: 1;
-	transform: scale(1);
+	transform: translateY(30px); scale(1);
 }
 .layer-5 .divider {
 	height: 100px;
@@ -1273,8 +1276,22 @@ footer p {
 	.layer-5 .warning {
 		font-size: 16px;
 	}
+	.layer-5 .portfolio .col .col-bg h2 {
+		font-size: 25px;
+	}
 	.layer-5 .portfolio .col .col-bg p {
 		font-size: 13px;
+		transform: translateY(-20px);
+	}
+	.layer-5 .portfolio .col .col-bg p#lowerr {
+		font-size: 13px;
+		transform: translateY(-10px);
+	}
+	.layer-5 .portfolio .col:hover .col-bg p {
+		transform: translateY(-20px) scale(1);
+	}
+	.layer-5 .portfolio .col:hover .col-bg p#lowerr {
+		transform: translateY(-10px) scale(1);
 	}
 	.layer-5 .divider {
 		height: 40px;
