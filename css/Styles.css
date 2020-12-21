@@ -353,6 +353,7 @@ nav span a:hover {
 	font-size: 30px;
 	font-family: 'josefinR', sans-serif;
 	margin-top: 20px;
+	text-align: center;
 }
 
 .layer-2 .col .img::before {
@@ -1069,7 +1070,7 @@ footer p {
 }
 @media only screen and (max-width: 1024px) {
 	.layer-1 {
-		width: 800px;
+		width: 100%;
 		height: 600px;
 		padding-top: 165px;
 	}
@@ -1078,7 +1079,7 @@ footer p {
 		height: 45px;
 	}
 	.layer-2 {
-		width: 800px;
+		width: 100%;
 		padding-top: 150px;
 		height: 700px;
 	}
@@ -1091,6 +1092,9 @@ footer p {
 	.layer-2 .text {
 		font-size: 25px;
 	}
+	div.avatar-divider {
+		width: 100%;
+	}
 	div.avatar-divider::before {
 		width: 220px;
 		height: 220px;
@@ -1098,7 +1102,7 @@ footer p {
 		transform: translateX(-110px);
 	}
 	.layer-3 {
-		width: 800px;
+		width: 100%;
 	}
 	.layer-3 .l3-container .batteries .battery {
 		width: 250px;
@@ -1136,7 +1140,8 @@ footer p {
 		transform: translate3d(25px, -75px, 0);
 	}
 	.layer-4 {
-		width: 800px;
+		width: 100%;
+		height: 650px;
 	}
 	.layer-4 .roadmap {
 		padding: 130px 70px 0;
@@ -1152,7 +1157,7 @@ footer p {
 		left: -25px;
 	}
 	.layer-4 .col p {
-		width: 90%;
+		width: 70%;
 		padding: 90px 80px;
 		transform: translateX(-25px);
 		font-size: 20px;
@@ -1177,10 +1182,10 @@ footer p {
 		margin-block-end: 0;
 	}
 	.layer-5 {
-		width: 800px;
+		width: 100%;
 	}
 	.layer-5 .portfolio {
-		width: 800px;
+		width: 100%;
 	}
 	.layer-5 .divider {
 		height: 70px;
@@ -1201,7 +1206,7 @@ footer p {
 		font-size: 18px;
 	}
 	.layer-6 {
-		width: 800px;
+		width: 100%;
 		height: 600px;
 	}
 	.layer-6 .container {
@@ -1226,14 +1231,12 @@ footer p {
 		height: 45px;
 	}
 	footer {
-		width: 800px;
+		width: 100%;
 		border-top: 3px solid #555;
 	}
 }
 @media only screen and (max-width: 768px) {
-	.layer-1 {
-		width: 625px;
-	}
+
 	.modal-icons .col {
 		width: 33%;
 	}
@@ -1254,7 +1257,7 @@ footer p {
 		width: 200px;
 		height: 200px;
 		top: -125px;
-		transform: translateX(-115px);
+		transform: translateX(-100px);
 	}
 	.layer-2 {
 		padding-top: 150px;
@@ -1281,7 +1284,6 @@ footer p {
 		font-size: 35px;
 	}
 	.layer-2 .text {
-		text-align: center;
 		font-size: 22px;
 	}
 	.layer-3 {
@@ -1476,11 +1478,11 @@ footer p {
 		height: 60px;
 	}
 	.layer-2 .l2-heading {
-		font-size: 38px;
+		font-size: 30px;
 	}
 	.layer-2 .l2-underheading{
-		font-size: 25px;
-		padding: 0 15px;
+		font-size: 22px;
+		padding: 0 20px;
 	}
 	.layer-2 .heading {
 		font-size: 36px;
@@ -1554,26 +1556,16 @@ footer p {
 	.layer-5 .portfolio {
 		width: 100%;
 	}
-	.layer-5 .portfolio .row {
-		margin-top: 0;
+	.layer-5 .flex {
+		flex-direction: column;
 	}
-	.layer-5 .portfolio .col {
-		width: 100%;
-		margin-top: 40px;
-	}
-	.layer-5 .portfolio .col img {
-		filter: brightness(1);
-	}
-	.layer-5 .portfolio .col .col-bg div {
-		transform: scale(1);
+	.layer-5 .box a div {
 		opacity: 1;
-	}
-	.layer-5 .portfolio .col .col-bg h2 {
-		transform: translate3d(-50%, -50%, 0);
-	}
-	.layer-5 .portfolio .col .col-bg p {
 		transform: scale(1);
-		opacity: 1;
+	}
+	.layer-5 .box h2 {
+		font-size: 25px;
+		transform: translate3d(-50%, -25px ,0);
 	}
 	.warning {
 		font-size: 18px;
@@ -1583,6 +1575,11 @@ footer p {
 	.layer-6 {
 		width: 100%;
 		height: 700px;
+		background-image: url('../images/bg5.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top right;
+		transform: translateY(-5px);
 	}
 	.layer-6 .container .col.right {
 		width: 100%;
@@ -1605,6 +1602,9 @@ footer p {
 	.layer-6 .container .col.left .p3img {
 		margin-left: 50px;
 	}
+	
+	
+
 	footer p {
 		font-size: 100%;
 	}
@@ -1619,5 +1619,8 @@ footer p {
 	}
 	.layer-2 .l2-container .col {
 		padding-bottom: 10px;
+	}
+	.layer-6 .col p {
+		font-size: 18px;
 	}
 }
