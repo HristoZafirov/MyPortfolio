@@ -7,52 +7,40 @@
 	<link rel="stylesheet" type="text/css" href="css/Styles.css">
 </head>
 <body>
-	<div id="modal-background">
-		<div id="circle"></div>
-		<div id="icon" onclick="toggleModalOn();">
-			<span id="topLine" class="top line"></span>
-			<span id="middleLine" class="middle line"></span>
-			<span id="bottomLine" class="bottom line"></span>
+<div id="modal">
+	<div class="modal-container">
+		<div class="modal-bg"></div>
+		<div class="X">
+			<div class="X-line"></div>
+			<div class="X-line"></div>
+			<div class="X-line"></div>
+		</div>
+		<div class="modal-links">
+			<div class="modal-flex-col">
+				<a href="#pinPoint-1">
+					<div class="linkbox">HOME</div>
+				</a>
+				<a href="#pinPoint-2">
+					<div class="linkbox">CHARACTER</div>
+				</a>
+				<a href="#pinPoint-3">
+					<div class="linkbox">SKILLS</div>
+				</a>
+			</div>
+			<div class="modal-flex-col">
+				<a href="#pinPoint-4">
+					<div class="linkbox">ROADMAP</div>
+				</a>
+				<a href="#pinPoint-5">
+					<div class="linkbox">PORTFOLIO</div>
+				</a>
+				<a href="#pinPoint-6">
+					<div class="linkbox">CONTACTS</div>
+				</a>
+			</div>
 		</div>
 	</div>
-
-	<div id="modal">
-		<div class="modal-icons">
-			<div id="right" class="col right">
-				<div class="col right">
-					<a target="_blank" href="https://www.skype.com/en/"><img id="ic1" src="images/skype.png" /></a>
-				</div>
-				<div class="col right">
-					<a target="_blank" href="https://www.viber.com/"><img id="ic2" src="images/viber.png" /></a>
-				</div>
-				<div class="col left">
-					<a target="_blank" href="https://www.pinterest.com/"><img id="ic3" src="images/pinterest.png" /></a>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div id="left" class="col left">
-				<div class="col right">
-					<a target="_blank" href="https://www.google.com/gmail/"><img id="ic4" src="images/gmail.png" /></a>
-				</div>
-				<div class="col right">
-					<a target="_blank" href="https://www.instagram.com/"><img id="ic5" src="images/instagram.png" /></a>
-				</div>
-				<div class="col left">
-					<a target="_blank" href="https://www.facebook.com/"><img id="ic6" src="images/facebook.png" /></a>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<nav>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-1">Home </a></span>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-2">About </a></span>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-5">My Skills </a></span>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-6">My Roadmap </a></span>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-3">Projects </a></span>
-			<span><a onclick="toggleModalOff();" href="#pinPoint-4">Contacts </a></span>
-		</nav>
-	</div>
+</div>
 	
 
 	<div id="pinPoint-1" class="layer-1 parallax">
